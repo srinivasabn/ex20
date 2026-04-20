@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'mymaven'
-        jdk   'myjdk'
-    }
-
     environment {
         IMAGE_NAME     = "sample-webapp"
         CONTAINER_NAME = "sample-webapp-container"
