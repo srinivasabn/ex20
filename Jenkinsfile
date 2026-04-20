@@ -6,13 +6,7 @@ pipeline {
         CONTAINER_NAME = "sample-webapp-container"
     }
 
-    stages {
-        stage('Clone') {
-            steps {
-                echo 'Cloning repository'
-                git 'https://github.com/your-username/your-repo.git'
-            }
-        }
+   
 
         stage('Build WAR') {
             steps {
